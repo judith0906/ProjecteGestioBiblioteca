@@ -9,8 +9,8 @@ public class Llibre {
         this.prestat = false;
     }
 
-    public void crearLlibre(String titol, String autor){
-        Llibre llibre = new Llibre(titol, autor);
+    public void crearLlibre(String nom_variable, String titol, String autor){
+        Llibre nom_variable = new Llibre(titol, autor);
     }
 
     public void modificarLlibre(String titol, String autor){
@@ -21,9 +21,9 @@ public class Llibre {
         }
     }
 
-    public void eliminarLlibre(String titol){
+    public void eliminarLlibre(String nom_variable, String titol){
         if(this.titol == titol){
-            llibre = null;
+            nom_variable = null;
         }
     }
 
