@@ -40,4 +40,10 @@ public class Llibre {
     public boolean marcarComPrestat() {
         return prestat = true;
     }
+
+        //to String per veure els llibres més prestats
+        @Override
+        public String toString() {
+            return "Llibre: " + titol + ", autor: " + autor;
+        }
 }
