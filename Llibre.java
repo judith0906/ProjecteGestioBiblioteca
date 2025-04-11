@@ -9,22 +9,35 @@ public class Llibre {
         this.prestat = false;
     }
 
-    public void crearLlibre(String nom_variable, String titol, String autor){
-        Llibre nom_variable = new Llibre(titol, autor);
-    }
-
-    public void modificarLlibre(String titol, String autor){
-        if(titol != null){
-           this.titol = titol; 
-        } else if (autor != null){
-            this.autor = autor;
+    // Métodes per modificar el llibre  de diferents maneres
+    public void modificarTitol(String nouTitol) {
+        if(nouTitol != null) {
+            this.titol = nouTitol;
         }
     }
 
-    public void eliminarLlibre(String nom_variable, String titol){
-        if(this.titol == titol){
-            nom_variable = null;
+    public void modificarAutor(String nouAutor) {
+        if(nouAutor != null) {
+            this.autor = nouAutor;
         }
     }
 
+    // Métodes per modificar ambdos camps alhora
+    public void modificarLlibre(String nouTitol, String nouAutor) {
+        if(nouTitol != null) {
+            this.titol = nouTitol;
+        }
+        if(nouAutor != null) {
+            this.autor = nouAutor;
+        }
+    }
+
+    //Metodes per controlar si un llibre està prestat o no
+    public boolean estaPrestat() {
+        return prestat;
+    }
+
+    public boolean marcarComPrestat() {
+        return prestat = true;
+    }
 }
