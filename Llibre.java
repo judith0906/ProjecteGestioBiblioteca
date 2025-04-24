@@ -46,4 +46,11 @@ public class Llibre {
         public String toString() {
             return "Llibre: " + titol + ", autor: " + autor;
         }
+
+        public String getTitol() {
+            return titol;
+        }
+
+
+    
 }
