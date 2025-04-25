@@ -16,7 +16,10 @@ public class GestorBiblioteca {
             prestec prestec = new prestec(usuari, llibre, LocalDate.now());
                 
             prestecs.add(prestec);
-            
+            usuari.afegirLlibre(llibre);
+            System.out.println(usuari.getNom() + "ha afagat el llibre " + llibre.getTitol());
+        } else {
+            System.out.println("Aquest llibre ja ha estat prestat");
         }
     }
 
