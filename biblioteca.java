@@ -22,6 +22,7 @@ public class biblioteca {
         return null;
     }
     
+    
     public List<Llibre> getLlibres(){
         return llibres;
     }
