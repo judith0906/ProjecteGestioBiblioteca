@@ -20,7 +20,6 @@ public class Usuari {
     }
 
 
-    
 
     public String getNom() {
         return nom;
